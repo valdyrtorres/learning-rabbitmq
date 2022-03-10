@@ -9,7 +9,9 @@ import org.springframework.amqp.rabbit.core.RabbitAdmin
 import org.springframework.context.annotation.Configuration
 import javax.annotation.PostConstruct
 
-@Configuration
+// Comente a annotation abaixo quando rodar pela segunda vez
+// Caso queira criar novamente basta descomentar
+//@Configuration
 class RabbitConfig(private val connectionFactory: ConnectionFactory) {
 
     @PostConstruct
